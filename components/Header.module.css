@@ -1,0 +1,119 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navMenu {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLink {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #4CAF50;
+}
+
+.navActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #388E3C;
+}
+
+.btnSecondary {
+  background-color: transparent;
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+}
+
+.btnSecondary:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menuToggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .navMenu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-150%);
+    transition: transform 0.3s ease-in-out;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .navMenu.active {
+    transform: translateY(0);
+  }
+
+  .navActions {
+    display: none;
+  }
+
+  .menuToggle {
+    display: flex;
+  }
+}
