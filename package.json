@@ -1,12 +1,14 @@
 {
-  "name": "react-website",
+  "name": "priyanshika-agri-foods",
   "version": "1.0.0",
-  "description": "A modern React website built from scratch",
+  "description": "Priyanshika Agri Foods Private Limited - Premium Agricultural Products Website",
   "main": "index.js",
+  "homepage": ".",
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
-    "dev": "webpack serve --mode development --open"
+    "dev": "webpack serve --mode development --open",
+    "serve": "webpack serve --mode production --port 3000"
   },
   "keywords": ["react", "website", "webpack"],
   "author": "",
